@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0353F"/><stop offset="1" stop-color="#A50F1A"/>
+    </linearGradient>
+    <linearGradient id="body" gradientUnits="userSpaceOnUse" x1="0" y1="220" x2="0" y2="850">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F1ECE6"/>
+    </linearGradient>
+    <filter id="shadow" filterUnits="userSpaceOnUse" x="0" y="0" width="1024" height="1024">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Fond macOS (carré arrondi) -->
+  <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+
+  <g stroke="#141414" stroke-width="14" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Le M : bosses pointues, jambe gauche ; le côté droit devient le bras -->
+    <path d="M 300 800 L 300 330 L 365 222 L 512 415 L 659 222 L 724 330 L 724 650
+Q 724 690 684 690 L 412 690 L 412 800 Q 412 845 356 845 Q 300 845 300 800 Z" fill="url(#body)" filter="url(#shadow)"/>
+
+    <!-- Visage : sourcils, un œil fermé (clin d'œil), un œil ouvert -->
+    <path d="M 380 432 Q 418 412 456 428" fill="none" stroke-width="12"/>
+    <path d="M 572 420 Q 610 398 648 418" fill="none" stroke-width="12"/>
+    <path d="M 386 484 Q 418 508 450 484" fill="none" stroke-width="13"/>
+    <ellipse cx="610" cy="482" rx="24" ry="31" fill="#141414" stroke="none"/>
+    <circle cx="618" cy="471" r="8" fill="#FFFFFF" stroke="none"/>
+    <!-- Bouche en « o », derrière le doigt -->
+    <ellipse cx="522" cy="596" rx="42" ry="17" fill="#141414" stroke="none"/>
+
+    <!-- Bras musclé, coude plié -->
+    <path d="M 716 455
+C 790 440 845 500 852 590
+C 858 650 862 700 835 735
+C 805 775 730 770 650 732
+L 585 700 L 575 652
+C 640 668 700 680 742 668
+C 700 650 680 590 705 545
+C 712 532 718 525 722 520 Z" fill="url(#body)"/>
+    <!-- Raccord de l'épaule : masque la couture entre le bras et le M -->
+    <rect x="704" y="464" width="34" height="52" fill="url(#body)" stroke="none"/>
+    <g fill="none" stroke-width="7">
+      <path d="M 772 478 Q 802 515 792 556"/>
+      <path d="M 718 604 Q 742 628 770 618"/>
+      <path d="M 752 690 Q 764 680 778 684"/>
+      <path d="M 795 738 Q 745 722 700 730"/>
+    </g>
+
+    <!-- Main : index levé (chut), trois doigts repliés, pouce -->
+    <rect x="500" y="528" width="44" height="130" rx="22" fill="url(#body)"/>
+    <rect x="509" y="538" width="26" height="24" rx="10" fill="none" stroke-width="5"/>
+    <rect x="478" y="618" width="108" height="96" rx="34" fill="url(#body)"/>
+    <rect x="462" y="626" width="76" height="30" rx="15" fill="url(#body)" stroke-width="10"/>
+    <rect x="462" y="654" width="76" height="30" rx="15" fill="url(#body)" stroke-width="10"/>
+    <rect x="466" y="682" width="70" height="30" rx="15" fill="url(#body)" stroke-width="10"/>
+    <path d="M 548 640 Q 575 628 584 650" fill="none" stroke-width="7"/>
+  </g>
+</svg>
