@@ -318,3 +318,7 @@ Sources/Murmur/
   Commander.swift           mode commande : réécriture de la sélection
   Snippets.swift            raccourcis vocaux snippets.txt
 ```
+
+## Licence
+
+MIT : tu peux utiliser, modifier et redistribuer Murmur librement, en gardant la mention de copyright. Voir [LICENSE](LICENSE).
